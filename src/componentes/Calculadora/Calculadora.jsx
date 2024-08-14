@@ -1,4 +1,6 @@
-import './personaliza.css'
+import { useState } from 'react';
+
+import './estilo.css'
 
 function calcula () {
     const [peso, setPeso] = useState('');
@@ -7,7 +9,6 @@ function calcula () {
     const [classificacao, setClassificacao] = useState('');
 
     const calculaIMC = () => {
-        const altura = altura;
         const resultado = peso / (altura * altura);
         setImc (resultado.toFixed(2));
 
